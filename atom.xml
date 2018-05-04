@@ -6,7 +6,7 @@
   <link href="/techblog/atom.xml" rel="self"/>
   
   <link href="https://gsneotek-wisen.github.io/"/>
-  <updated>2018-04-27T03:11:21.406Z</updated>
+  <updated>2018-05-04T06:27:24.468Z</updated>
   <id>https://gsneotek-wisen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>accompanyi</title>
+    <link href="https://gsneotek-wisen.github.io/2018/05/04/accompanyi/"/>
+    <id>https://gsneotek-wisen.github.io/2018/05/04/accompanyi/</id>
+    <published>2018-05-04T06:27:24.467Z</published>
+    <updated>2018-05-04T06:27:24.468Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;소개&quot;&gt;&lt;a href=&quot;#소개&quot; class=&quot;headerlink&quot; title=&quot;소개&quot;&gt;&lt;/a&gt;소개&lt;/h3&gt;&lt;p&gt;개발을 꾸준히 하기위해 단련을 하는중이다. 그 과정을 블로그로 남기려 부족하지만 차근차근 글을 써나가 보려한다. 내가 맡은
+        
+      
+    
+    </summary>
+    
+      <category term="Dev" scheme="https://gsneotek-wisen.github.io/categories/Dev/"/>
+    
+    
+      <category term="Jersey Netty InfluxDB JAVA8 JAVA9 HTTP REST" scheme="https://gsneotek-wisen.github.io/tags/Jersey-Netty-InfluxDB-JAVA8-JAVA9-HTTP-REST/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
