@@ -16,20 +16,20 @@
   <title>accompanyi | Tech Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="Jersey Netty InfluxDB JAVA8 JAVA9 HTTP REST" />
+  <meta name="keywords" content="JerseyNettyInfluxDBJAVA8JAVA9HTTPREST" />
   
   
   
   
   <meta name="description" content="소개개발을 꾸준히 하기위해 단련을 하는중이다. 그 과정을 블로그로 남기려 부족하지만 차근차근 글을 써나가 보려한다. 내가 맡은 일은 사내에있는 통합모니터링 시스템 재구축(쥬피터 고도화)이라는 프로젝트에 개발자로 포함되어있다. 이중 맡은 업무는 API 서버 담당이였다. 기존 웹개발만 깨작거리다 API서버에대해 제대로 고민하고 만들려한건 처음이라 많은 걱정이">
-<meta name="keywords" content="Jersey Netty InfluxDB JAVA8 JAVA9 HTTP REST">
+<meta name="keywords" content="Jersey,Netty,InfluxDB,JAVA8,JAVA9,HTTP,REST">
 <meta property="og:type" content="article">
 <meta property="og:title" content="accompanyi">
 <meta property="og:url" content="https://gsneotek-wisen.github.io/2018/05/04/accompanyi/index.html">
 <meta property="og:site_name" content="Tech Blog">
 <meta property="og:description" content="소개개발을 꾸준히 하기위해 단련을 하는중이다. 그 과정을 블로그로 남기려 부족하지만 차근차근 글을 써나가 보려한다. 내가 맡은 일은 사내에있는 통합모니터링 시스템 재구축(쥬피터 고도화)이라는 프로젝트에 개발자로 포함되어있다. 이중 맡은 업무는 API 서버 담당이였다. 기존 웹개발만 깨작거리다 API서버에대해 제대로 고민하고 만들려한건 처음이라 많은 걱정이">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-04T06:27:24.468Z">
+<meta property="og:updated_time" content="2018-05-04T06:39:07.090Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="accompanyi">
 <meta name="twitter:description" content="소개개발을 꾸준히 하기위해 단련을 하는중이다. 그 과정을 블로그로 남기려 부족하지만 차근차근 글을 써나가 보려한다. 내가 맡은 일은 사내에있는 통합모니터링 시스템 재구축(쥬피터 고도화)이라는 프로젝트에 개발자로 포함되어있다. 이중 맡은 업무는 API 서버 담당이였다. 기존 웹개발만 깨작거리다 API서버에대해 제대로 고민하고 만들려한건 처음이라 많은 걱정이">
@@ -203,8 +203,7 @@ var themeMenus = {};
 </ul>
 <h3 id="프로젝트-구성"><a href="#프로젝트-구성" class="headerlink" title="프로젝트 구성"></a>프로젝트 구성</h3><p>선행조건과 요구사항을 부합하기위해 Jersey + Netty 조건으로 JDK8로 선택하였으며, 프로젝트는 gradle 로 결정.</p>
 <p>Netty는 HTTP 프로토콜을 처리해서 받고, Jersey는 Restful API 관련 핸들러를 이용해서 메시지를 처리하게끔 프로젝트를 구성.</p>
-<p>###의존성</p>
-<ul>
+<h3 id="의존성"><a href="#의존성" class="headerlink" title="의존성"></a>의존성</h3><ul>
 <li><code>Netty</code> 5.0.0.Alpha1</li>
 <li><code>Jersey-server</code> 2.7</li>
 <li><code>Influxdb-java</code> 2.9</li>
@@ -248,8 +247,7 @@ var themeMenus = {};
 <li><a href="https://github.com/dagingaa/netty-jersey2/blob/master/src/main/java/com/comoyo/nettyexample/HttpServer.java" target="_blank" rel="noopener">https://github.com/dagingaa/netty-jersey2/blob/master/src/main/java/com/comoyo/nettyexample/HttpServer.java</a></li>
 <li><a href="https://github.com/jersey/jersey" target="_blank" rel="noopener">https://github.com/jersey/jersey</a></li>
 </ul>
-<p>###Next</p>
-<ul>
+<h3 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h3><ul>
 <li>자료와 검증이된 스택 활용</li>
 <li>대중적인 API서버를 벤치마킹하여 프로토콜 재설계</li>
 <li>InfluxDB -&gt; AWS Cloud Watch에서 데이터 가져오기</li>
@@ -264,7 +262,7 @@ var themeMenus = {};
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/Jersey-Netty-InfluxDB-JAVA8-JAVA9-HTTP-REST/">Jersey Netty InfluxDB JAVA8 JAVA9 HTTP REST</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/InfluxDB/">InfluxDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/JAVA8/">JAVA8</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/JAVA9/">JAVA9</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/Jersey/">Jersey</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/Netty/">Netty</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/REST/">REST</a></li></ul>
 
       
             
@@ -292,7 +290,7 @@ var themeMenus = {};
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#소개"><span class="nav-number">1.</span> <span class="nav-text">소개</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#선행조건"><span class="nav-number">2.</span> <span class="nav-text">선행조건</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#요구사항"><span class="nav-number">3.</span> <span class="nav-text">요구사항</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#기초공부"><span class="nav-number">4.</span> <span class="nav-text">기초공부</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#프로젝트-구성"><span class="nav-number">5.</span> <span class="nav-text">프로젝트 구성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#개발내용"><span class="nav-number">6.</span> <span class="nav-text">개발내용</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#마치며"><span class="nav-number">7.</span> <span class="nav-text">마치며</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ref"><span class="nav-number">8.</span> <span class="nav-text">Ref</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#소개"><span class="nav-number">1.</span> <span class="nav-text">소개</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#선행조건"><span class="nav-number">2.</span> <span class="nav-text">선행조건</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#요구사항"><span class="nav-number">3.</span> <span class="nav-text">요구사항</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#기초공부"><span class="nav-number">4.</span> <span class="nav-text">기초공부</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#프로젝트-구성"><span class="nav-number">5.</span> <span class="nav-text">프로젝트 구성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#의존성"><span class="nav-number">6.</span> <span class="nav-text">의존성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#개발내용"><span class="nav-number">7.</span> <span class="nav-text">개발내용</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#마치며"><span class="nav-number">8.</span> <span class="nav-text">마치며</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ref"><span class="nav-number">9.</span> <span class="nav-text">Ref</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Next"><span class="nav-number">10.</span> <span class="nav-text">Next</span></a></li></ol>
     
     </div>
   </aside>

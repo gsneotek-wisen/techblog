@@ -6,7 +6,7 @@
   <link href="/techblog/atom.xml" rel="self"/>
   
   <link href="https://gsneotek-wisen.github.io/"/>
-  <updated>2018-05-04T06:27:24.468Z</updated>
+  <updated>2018-05-04T06:39:07.090Z</updated>
   <id>https://gsneotek-wisen.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://gsneotek-wisen.github.io/2018/05/04/accompanyi/"/>
     <id>https://gsneotek-wisen.github.io/2018/05/04/accompanyi/</id>
     <published>2018-05-04T06:27:24.467Z</published>
-    <updated>2018-05-04T06:27:24.468Z</updated>
+    <updated>2018-05-04T06:39:07.090Z</updated>
     
     <summary type="html">
     
@@ -38,7 +38,19 @@
       <category term="Dev" scheme="https://gsneotek-wisen.github.io/categories/Dev/"/>
     
     
-      <category term="Jersey Netty InfluxDB JAVA8 JAVA9 HTTP REST" scheme="https://gsneotek-wisen.github.io/tags/Jersey-Netty-InfluxDB-JAVA8-JAVA9-HTTP-REST/"/>
+      <category term="Jersey" scheme="https://gsneotek-wisen.github.io/tags/Jersey/"/>
+    
+      <category term="Netty" scheme="https://gsneotek-wisen.github.io/tags/Netty/"/>
+    
+      <category term="InfluxDB" scheme="https://gsneotek-wisen.github.io/tags/InfluxDB/"/>
+    
+      <category term="JAVA8" scheme="https://gsneotek-wisen.github.io/tags/JAVA8/"/>
+    
+      <category term="JAVA9" scheme="https://gsneotek-wisen.github.io/tags/JAVA9/"/>
+    
+      <category term="HTTP" scheme="https://gsneotek-wisen.github.io/tags/HTTP/"/>
+    
+      <category term="REST" scheme="https://gsneotek-wisen.github.io/tags/REST/"/>
     
   </entry>
   
