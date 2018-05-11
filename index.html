@@ -153,6 +153,164 @@ var themeMenus = {};
         
           <section id="main">
   
+    <article id="post-design-pattern-1"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/techblog/2018/05/11/design-pattern-1/">남의 코드로 배워보는 Design Pattern (1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/techblog/2018/05/11/design-pattern-1/" class="article-date">
+	  <time datetime="2018-05-11T03:00:00.000Z" itemprop="datePublished">May 11, 2018</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://java-design-patterns.com" target="_blank" rel="noopener">Design patterns implemented in Java</a> 를 둘러보면서 현업에서 겪었던 또는 그 비슷한 이야기를 풀어보자.</p>
+<h3 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a><a href="http://java-design-patterns.com/patterns/adapter/" target="_blank" rel="noopener">Adapter</a></h3><p>설명은 링크에 잘 나와있으니까 그쪽을 참고하는게 좋다.</p>
+<p><code>also known as __Wrapper__</code> 말 그대로 A에서 B를 쓰는데 C로 감싸서 A-&gt;C(B) 요렇게 사용한다는 것.</p>
+<p>개인적인 경험으로 많이 활용되었던 2가지 경우는</p>
+<ol>
+<li>3rd party 나 black box를 변경없이 사용하려고 할 때</li>
+<li>같은 기능으로 여러 3rd party를 지원해야 할 경우</li>
+</ol>
+<p>정도였다.</p>
+<h3 id="Balking"><a href="#Balking" class="headerlink" title="Balking"></a><a href="http://java-design-patterns.com/patterns/balking/" target="_blank" rel="noopener">Balking</a></h3><p>한마디로 <code>IllegalStateException</code>.<br>상태 값을 관리해서 괜찮을 때가 아니면 Balking(=실패) 하는 것.<br>상태 값을 실시간으로 관리하는 상황이 많으므로 필연적으로 구현에 동기화 문제를 고려해야한다.<br>애초에 상태 관리는 고려할 게 많아서 정말 간단하게 만들던지, 유한 상태 기계 (Finite State Machine) 같은 걸 이용해서 확실히 관리 하던지 해야한다.</p>
+<h3 id="Callback"><a href="#Callback" class="headerlink" title="Callback"></a><a href="http://java-design-patterns.com/patterns/callback/" target="_blank" rel="noopener">Callback</a></h3><p>이 것도 패턴이라면 패턴인건가? 너무나도 기본적인 개발 기법.<br>처리 로직을 분리시킬 경우, 분리된 로직이 완료될 때 등록된 로직을 수행하게 한다. 요때 등록된 로직을 callback이라고 한다. 일일이 열거하기 힘들정도로 쓰는데가 너무 많다.<br>IO나 GUI 등 비동기 처리를 할 때 주로 쓴다.</p>
+<h3 id="Converter"><a href="#Converter" class="headerlink" title="Converter"></a><a href="http://java-design-patterns.com/patterns/converter/" target="_blank" rel="noopener">Converter</a></h3><p>데이터 형으로 사용되는 객체를 비슷하지만 조금 다른 형태로 변환하고자 할 때, 변환 로직을 아예 별도 객체로 만들어두는 것.<br>네트워크 전송을 위한 객체(DTO)를 사용할 때 주로 쓴다.</p>
+<h3 id="Data-Access-Object"><a href="#Data-Access-Object" class="headerlink" title="Data Access Object"></a><a href="http://java-design-patterns.com/patterns/data-access-object/" target="_blank" rel="noopener">Data Access Object</a></h3><p>db나 disk 같은 영속 저장소에 접근할 때, 접근 계층을 추상화해서 접근 로직을 유연하게 하는 것.<br>현재 존재하고 향후 추가될 다양한 저장소 접근 로직 구현과 비즈니스 로직을 분리하는 것으로 확장성을 높인다… 가 주요 목적임.</p>
+<p>access layer를 interface로 빼고 implements 와 독립성을 갖게 하는건 객체 지향 개발의 장점이자 정말 일반적인 활용법.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/techblog/categories/Design-Pattern/">Design Pattern</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/adapter/">adapter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/balking/">balking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/callback/">callback</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/converter/">converter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/data-access-object/">data access object</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-read-2018-19th-week"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/techblog/2018/05/11/read-2018-19th-week/">이 주에 읽은 글 (2018년 19주차)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/techblog/2018/05/11/read-2018-19th-week/" class="article-date">
+	  <time datetime="2018-05-11T03:00:00.000Z" itemprop="datePublished">May 11, 2018</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>한 주간 읽은 중 흥미로웠던 기술 관련 글을 기록해 본다.</p>
+<h2 id="Micro-Service-관련"><a href="#Micro-Service-관련" class="headerlink" title="Micro Service 관련"></a>Micro Service 관련</h2><h3 id="Haproxy와-Docker를-이용한-로드밸런싱"><a href="#Haproxy와-Docker를-이용한-로드밸런싱" class="headerlink" title="Haproxy와 Docker를 이용한 로드밸런싱"></a><a href="https://mrchypark.github.io/post/번역-haproxy와-docker를-이용한-로드밸런싱/" target="_blank" rel="noopener">Haproxy와 Docker를 이용한 로드밸런싱</a></h3><h3 id="Serverless-Media-Platform"><a href="#Serverless-Media-Platform" class="headerlink" title="Serverless Media Platform"></a><a href="https://www.slideshare.net/mooyoul/serverless-media-workflow-95267586" target="_blank" rel="noopener">Serverless Media Platform</a></h3><ul>
+<li>steps<ul>
+<li>ingest &gt; process &gt; deliver</li>
+<li>upload, live &gt; encode, packaging &gt; cdn, ad insertion</li>
+</ul>
+</li>
+<li>ingest: s3 upload is slow, there are two option<ul>
+<li><del>proxy through cloudfront</del></li>
+<li><a href="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/user-guide/enable-transfer-acceleration.html" target="_blank" rel="noopener">enable s3 transfer acceleration</a><ul>
+<li>10x faster than proxy</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>process<ul>
+<li>adaptive bitrate streaming</li>
+<li>streaming protocol<ul>
+<li><del>non-http based rtmp like</del></li>
+<li>http based<ul>
+<li><del>progressive download</del><ul>
+<li>pros: easy </li>
+<li>cons: hard to abs, slow seek, large bin can low cache hit, no live</li>
+</ul>
+</li>
+<li>apple hls</li>
+<li><del>mpeg dash</del><ul>
+<li>pros: new standard, mpeg4 based, supportmany codec </li>
+<li>cons: not ready yet</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>hls: android(exoplayer), web(hls.js video.js)</li>
+</ul>
+</li>
+<li>step + lambda<ul>
+<li><del>other options slow and expensive</del>, 걍 아마존 거 쓰는게…</li>
+<li>many troubles: how to get encoding tool, timeout, vpc, tiny ephemeral, reusablility</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="마이크로-서비스-구축-시-모듈-단위는"><a href="#마이크로-서비스-구축-시-모듈-단위는" class="headerlink" title="마이크로 서비스 구축 시 모듈 단위는?"></a><a href="https://www.popit.kr/마이크로-서비스msa로-구축할-때-모듈은-어떤-단위로/" target="_blank" rel="noopener">마이크로 서비스 구축 시 모듈 단위는?</a></h3><p>인터페이스 - 이벤트 핸들러 - 모듈<br><img src="https://www.popit.kr/wp-content/uploads/2017/09/Well20factored20service20architecture1028129_e2917a13053f9b0974842f4288ae2f8b-600x396.png" alt="참조모델"></p>
+<h2 id="일반-개발"><a href="#일반-개발" class="headerlink" title="일반 개발"></a>일반 개발</h2><h3 id="상대적-네이밍은-그만둬"><a href="#상대적-네이밍은-그만둬" class="headerlink" title="상대적 네이밍은 그만둬"></a><a href="https://qiita.com/hecateball/items/6aade3ece111ea7b8c43" target="_blank" rel="noopener">상대적 네이밍은 그만둬</a></h3><p><a href="https://playbattlegrounds.com" target="_blank" rel="noopener">배틀 그라운드</a> 를 생각하면 딱 와닿는다.<br>적 발견시 팀원에게 리포팅 할 때, <code>여기, 저기, 거기, 앞에, 뒤에</code> 뭐 이렇게 하는 거.</p>
+<p>new, latest, old / top, bottom left, right, middle, center / long, short / light, heavy, medium, high, low / batter, faster</p>
+<p>꼭 지켜야하는 것은 아니지만, 되도록 지양하는게 좋다.</p>
+<h3 id="이름-전화-번호-이메일-주소-등의-최적의-maxlength-몇-가지-알아-봤다"><a href="#이름-전화-번호-이메일-주소-등의-최적의-maxlength-몇-가지-알아-봤다" class="headerlink" title="이름, 전화 번호, 이메일 주소 등의 최적의 maxlength 몇 가지 알아 봤다"></a><a href="https://qiita.com/kyogom/items/49fe51044d57e3b19929" target="_blank" rel="noopener">이름, 전화 번호, 이메일 주소 등의 최적의 maxlength 몇 가지 알아 봤다</a></h3><h3 id="js-기호프로그래밍-입문"><a href="#js-기호프로그래밍-입문" class="headerlink" title="js 기호프로그래밍 입문"></a><a href="https://qiita.com/acid_chicken/items/eeb0b42a1ecbba0c49e3" target="_blank" rel="noopener">js 기호프로그래밍 입문</a></h3><p>어머니…</p>
+<p>이게 뭐하는 짓인가 싶겠지만 js는 이만큼 오해가 많았던, 오해가 많을, 오해가 많은 언어라는 점.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/techblog/categories/Dev/">Dev</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/techblog/tags/Dev/">Dev</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-accompanyi"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -441,6 +599,30 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/techblog/2018/05/11/design-pattern-1/">남의 코드로 배워보는 Design Pattern (1)</a></h6>
+              <span>May 11, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/techblog/2018/05/11/read-2018-19th-week/">이 주에 읽은 글 (2018년 19주차)</a></h6>
+              <span>May 11, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/techblog/2018/05/04/accompanyi/">accompanyi</a></h6>
               <span>May 4, 2018</span>
             </div>
@@ -468,7 +650,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/techblog/categories/Dev/">Dev</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/techblog/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/techblog/categories/Design-Pattern/">Design Pattern</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/techblog/categories/Dev/">Dev</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/techblog/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -478,7 +660,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/HTTP/">HTTP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/InfluxDB/">InfluxDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/JAVA8/">JAVA8</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/JAVA9/">JAVA9</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Jersey/">Jersey</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Netty/">Netty</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/REST/">REST</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Dev/">Dev</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/HTTP/">HTTP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/InfluxDB/">InfluxDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/JAVA8/">JAVA8</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/JAVA9/">JAVA9</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Jersey/">Jersey</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/Netty/">Netty</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/REST/">REST</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/adapter/">adapter</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/balking/">balking</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/callback/">callback</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/converter/">converter</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/techblog/tags/data-access-object/">data access object</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -488,7 +670,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/techblog/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/techblog/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/techblog/tags/InfluxDB/" style="font-size: 10px;">InfluxDB</a> <a href="/techblog/tags/JAVA8/" style="font-size: 10px;">JAVA8</a> <a href="/techblog/tags/JAVA9/" style="font-size: 10px;">JAVA9</a> <a href="/techblog/tags/Jersey/" style="font-size: 10px;">Jersey</a> <a href="/techblog/tags/Netty/" style="font-size: 10px;">Netty</a> <a href="/techblog/tags/REST/" style="font-size: 10px;">REST</a>
+      <a href="/techblog/tags/Dev/" style="font-size: 10px;">Dev</a> <a href="/techblog/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/techblog/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/techblog/tags/InfluxDB/" style="font-size: 10px;">InfluxDB</a> <a href="/techblog/tags/JAVA8/" style="font-size: 10px;">JAVA8</a> <a href="/techblog/tags/JAVA9/" style="font-size: 10px;">JAVA9</a> <a href="/techblog/tags/Jersey/" style="font-size: 10px;">Jersey</a> <a href="/techblog/tags/Netty/" style="font-size: 10px;">Netty</a> <a href="/techblog/tags/REST/" style="font-size: 10px;">REST</a> <a href="/techblog/tags/adapter/" style="font-size: 10px;">adapter</a> <a href="/techblog/tags/balking/" style="font-size: 10px;">balking</a> <a href="/techblog/tags/callback/" style="font-size: 10px;">callback</a> <a href="/techblog/tags/converter/" style="font-size: 10px;">converter</a> <a href="/techblog/tags/data-access-object/" style="font-size: 10px;">data access object</a>
     </div>
   </div>
 
@@ -498,7 +680,7 @@ var themeMenus = {};
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/techblog/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/techblog/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/techblog/archives/2018/05/">May 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/techblog/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

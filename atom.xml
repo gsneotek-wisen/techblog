@@ -6,7 +6,7 @@
   <link href="/techblog/atom.xml" rel="self"/>
   
   <link href="https://gsneotek-wisen.github.io/techblog/"/>
-  <updated>2018-05-04T07:29:51.298Z</updated>
+  <updated>2018-05-11T08:25:37.042Z</updated>
   <id>https://gsneotek-wisen.github.io/techblog/</id>
   
   <author>
@@ -17,11 +17,72 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>남의 코드로 배워보는 Design Pattern (1)</title>
+    <link href="https://gsneotek-wisen.github.io/techblog/2018/05/11/design-pattern-1/"/>
+    <id>https://gsneotek-wisen.github.io/techblog/2018/05/11/design-pattern-1/</id>
+    <published>2018-05-11T03:00:00.000Z</published>
+    <updated>2018-05-11T08:25:37.042Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://java-design-patterns.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Design patterns implemented in Java&lt;/a&gt; 를 둘러보면서 현업에서 겪었던 또는 그
+        
+      
+    
+    </summary>
+    
+      <category term="Design Pattern" scheme="https://gsneotek-wisen.github.io/techblog/categories/Design-Pattern/"/>
+    
+    
+      <category term="adapter" scheme="https://gsneotek-wisen.github.io/techblog/tags/adapter/"/>
+    
+      <category term="balking" scheme="https://gsneotek-wisen.github.io/techblog/tags/balking/"/>
+    
+      <category term="callback" scheme="https://gsneotek-wisen.github.io/techblog/tags/callback/"/>
+    
+      <category term="converter" scheme="https://gsneotek-wisen.github.io/techblog/tags/converter/"/>
+    
+      <category term="data access object" scheme="https://gsneotek-wisen.github.io/techblog/tags/data-access-object/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>이 주에 읽은 글 (2018년 19주차)</title>
+    <link href="https://gsneotek-wisen.github.io/techblog/2018/05/11/read-2018-19th-week/"/>
+    <id>https://gsneotek-wisen.github.io/techblog/2018/05/11/read-2018-19th-week/</id>
+    <published>2018-05-11T03:00:00.000Z</published>
+    <updated>2018-05-11T08:25:37.045Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;한 주간 읽은 중 흥미로웠던 기술 관련 글을 기록해 본다.&lt;/p&gt;
+&lt;h2 id=&quot;Micro-Service-관련&quot;&gt;&lt;a href=&quot;#Micro-Service-관련&quot; class=&quot;headerlink&quot; title=&quot;Micro Service
+        
+      
+    
+    </summary>
+    
+      <category term="Dev" scheme="https://gsneotek-wisen.github.io/techblog/categories/Dev/"/>
+    
+    
+      <category term="Dev" scheme="https://gsneotek-wisen.github.io/techblog/tags/Dev/"/>
+    
+  </entry>
+  
+  <entry>
     <title>accompanyi</title>
     <link href="https://gsneotek-wisen.github.io/techblog/2018/05/04/accompanyi/"/>
     <id>https://gsneotek-wisen.github.io/techblog/2018/05/04/accompanyi/</id>
     <published>2018-05-04T06:27:24.467Z</published>
-    <updated>2018-05-04T07:29:51.298Z</updated>
+    <updated>2018-05-04T10:08:31.705Z</updated>
     
     <summary type="html">
     
@@ -59,7 +120,7 @@
     <link href="https://gsneotek-wisen.github.io/techblog/2018/04/25/hello-world/"/>
     <id>https://gsneotek-wisen.github.io/techblog/2018/04/25/hello-world/</id>
     <published>2018-04-25T06:10:04.000Z</published>
-    <updated>2018-05-04T08:22:40.032Z</updated>
+    <updated>2018-05-04T09:44:19.541Z</updated>
     
     <summary type="html">
     
